@@ -132,9 +132,9 @@ doing):
 
 You can also assign a *character* value to an object:
 
-``` r
-b <- 'mouse' # assign the word 'character' to the object b
-```
+.. code-block:: R
+
+    b <- 'mouse' # assign the word 'character' to the object b
 
 To run a line of code, put your cursor on the line that you want to run
 and press `Enter+Cmd` or `Enter+Ctrl`. Or select the line and click the
@@ -152,11 +152,12 @@ combinations, use them in functions. Below we show how to perform
 multiplication using an object. Because `a` stores the value `34`, we
 can multiply it by 2:
 
-``` r
-a2 <- a*2 # multiply a by 2
-```
+.. code-block:: R
 
-### Functions and Arguments
+    a2 <- a*2 # multiply a by 2
+
+Functions and Arguments
+-----------------------
 
 Functions are â€œcanned scriptsâ€ that automate more complicated sets of
 commands including operations assignments, etc. Many functions are
@@ -168,9 +169,10 @@ a number, and the return value (in fact, the output) is the square root
 of that number. Executing a function (â€˜running itâ€™) is called calling
 the function. An example of a function call is:
 
-``` r
-sqrt(a) ## calculate the square root of a
-```
+.. code-block:: R
+
+    sqrt(a) ## calculate the square root of a
+
 
 Here, the value of `a` is given to the `sqrt()` function, the `sqrt()`
 function calculates the square root, and returns the value which is then
@@ -194,9 +196,10 @@ value of your choice which will be used instead of the default.
 
 Letâ€™s try a function that can take multiple arguments: `round()`.
 
-``` r
-round(3.141592) ## round number
-```
+.. code-block:: R
+
+    round(3.141592) ## round number
+
 
 Arguments are the â€˜conditionsâ€™ of a function. For example, the function
 `round()` has an argument to determine the number of decimals, and its
@@ -207,58 +210,65 @@ how to do that by getting information about the round function. We can
 use args(round) to find what arguments it takes, or look at the help for
 this function using ?round.
 
-``` r
-args(round) ## show the arguments of the function 'round'
-?round ## shows the information about 'round'
-```
+.. code-block:: R
+
+    args(round) ## show the arguments of the function 'round'
+    ?round ## shows the information about 'round'
+
 
 We can change this to two decimals by changing the `digits` argument:
 
-``` r
-round(3.141592, digits = 2)
-```
+.. code-block:: R
+
+    round(3.141592, digits = 2)
+
 
 Note that we do not need to specify the name of the argument as R
 detects this by the position within the function:
 
-``` r
-round(3.141592, 2)
-```
+.. code-block:: R
+
+    round(3.141592, 2)
+
 
 Though, it is preferablt to show the argument names. Plus, we have the
 added benefit of having the ability to change the order of the arguments
 if the arguments are named:
 
-``` r
-round(digits = 2, x= 3.141592)
-```
+.. code-block:: R
+
+    round(digits = 2, x= 3.141592)
+
 
 Itâ€™s best practice to put the non-optional arguments (the data that you
 want the function to work on) first, and then specify the names of all
 optional arguments. This helps other to interpret your code more easily.
 
-### Vectors
+Vectors
+-------
 
 A vector is the most common and basic data type in R, and is pretty much
 the workhorse of R. A vector is composed by a series of values, which
 can be either numbers or characters. We can assign a series of values to
 a vector using the c() function.
 
-``` r
-yeast_strain <- c('WT','snf2') 
-concentration <- c(43.903, 47.871)
-```
+.. code-block:: R
+
+    yeast_strain <- c('WT','snf2') 
+    concentration <- c(43.903, 47.871)
+
 
 There are many functions to inspect a vector and get information about
 its contents:
 
-``` r
-length(yeast_strain) # number of elements in a vector
-class(concentration) # type of object b
-str(yeast_strain) # inspect the structure of a
-```
+.. code-block:: R
+    length(yeast_strain) # number of elements in a vector
+    class(concentration) # type of object b
+    str(yeast_strain) # inspect the structure of a
 
-### Data types
+
+Data types
+----------
 
 An **atomic vector** is the simplest R data type, and it is a vector of
 a single type. The 6 main atomic vector types that R uses are:
@@ -276,9 +286,10 @@ a single type. The 6 main atomic vector types that R uses are:
 You can check the type of vecor you are using with the `typeof()`
 function.
 
-``` r
-typeof(concentration)
-```
+.. code-block:: R
+
+    typeof(concentration)
+
 
 **Challenge**: Atomic vectors can be a character, numeric (or double),
 integer, and logical. But what happens if we try to mix these types in a
@@ -287,10 +298,11 @@ single vector?
 <details>
 <summary><strong><font color="#6B33FF">Solution</font></strong></summary>
 
-``` r
-yeast_strain_concentration <- c(yeast_strain, concentration) # combine two vectors
-yeast_strain_concentration
-```
+.. code-block:: R
+
+    yeast_strain_concentration <- c(yeast_strain, concentration) # combine two vectors
+    yeast_strain_concentration
+
 
     ## [1] "WT"     "snf2"   "43.903" "47.871"
 
@@ -317,37 +329,42 @@ R uses many **data structures**, the main ones are:
 
 We will use `vectors`, `matrices`, `data.frames`, and `factors` today.
 
-### Subsetting
+Subsetting
+----------
 
 We can extract values from a vector based on position or conditions:
 this is called **subsetting**. One way to subset in R is to use `[]`.
 Indices start at 1.
 
-``` r
-strains <-  c('WT', 'snf2', 'snf1', 'snf1_snf2') 
-strains[2] # subsets the second element
-strains[c(2,3)] # subsets the second and third elements
-more_strains <- strains[c(1, 2, 3, 1, 4, 3)] # to create an object with more elements than tha original one
-more_strains
-```
+.. code-block:: R
 
-#### Conditional subsetting
+    strains <-  c('WT', 'snf2', 'snf1', 'snf1_snf2') 
+    strains[2] # subsets the second element
+    strains[c(2,3)] # subsets the second and third elements
+    more_strains <- strains[c(1, 2, 3, 1, 4, 3)] # to create an object with more elements than     tha original one
+    more_strains
+
+
+Conditional subsetting
+----------------------
 
 We can also subset based on **conditions**, using a logical vector with
 `TRUE` and `FALSE` or with *operators*:
 
-``` r
-strains[c(TRUE, FALSE, FALSE, TRUE)] 
-concentration >= 43
-concentration > 40
-concentration < 47
-concentration <= 47
-concentration[ concentration < 45 | concentration > 47] # | is OR
-concentration[ concentration < 45 & concentration == 47] # & is AND , == is mathematical 'equal'
-more_strains[more_strains %in% strains]
-```
+.. code-block:: R
 
-### Missing data
+    strains[c(TRUE, FALSE, FALSE, TRUE)] 
+    concentration >= 43
+    concentration > 40
+    concentration < 47
+    concentration <= 47
+    concentration[ concentration < 45 | concentration > 47] # | is OR
+    concentration[ concentration < 45 & concentration == 47] # & is AND , == is mathematical        'equal'
+    more_strains[more_strains %in% strains]
+
+
+Missing data
+------------
 
 As R was designed to analyze datasets, it includes the concept of
 missing data (which is uncommon in other programming languages). Missing
@@ -356,23 +373,25 @@ data are represented in vectors as NA.
 There are in-built functions and arguments to deal with missing data.
 For example, this vector contains missing data:
 
-``` r
-concentration <- c(43.903, 47.871, NA, 48.456, 53.435)
-```
+.. code-block:: R
+
+    concentration <- c(43.903, 47.871, NA, 48.456, 53.435)
 
 We can use the following functions to remove or ignore it:
 
-``` r
-mean(concentration, na.rm = TRUE) # mean of concentration removing your NA
-concentration[!is.na(concentration)] # extract all elements that are NOT NA
-na.omit(concentration) # returns a 'numeric' atomic vector with incomplete cases removed
-concentration[complete.cases(concentration)] # returns a 'numeric' atomic vector with elements that are complete cases
-```
+.. code-block:: R
+
+    mean(concentration, na.rm = TRUE) # mean of concentration removing your NA
+    concentration[!is.na(concentration)] # extract all elements that are NOT NA
+    na.omit(concentration) # returns a 'numeric' atomic vector with incomplete cases removed
+    concentration[complete.cases(concentration)] # returns a 'numeric' atomic vector with           elements that are complete cases
+    
 
 Note, if your data includes missing values, you can code them as blanks
 ("â€œ), or asâ€NA" before reading them into R.
 
-### Factors
+Factors
+-------
 
 Factors represent categorical data. They are stored as integers
 associated with labels and they can be ordered or unordered. While
@@ -380,12 +399,12 @@ factors look (and often behave) like character vectors, they are
 actually treated as integer vectors by R. So you need to be very careful
 when treating them as strings.
 
-``` r
-strains <-  factor(c('WT', 'snf2', 'snf1', 'snf1_snf2')) # We make our strains object a factor
-class(strains)
-nlevels(strains)
-strains # R orders alphabetically
-```
+.. code-block:: R
+
+    strains <-  factor(c('WT', 'snf2', 'snf1', 'snf1_snf2')) # We make our strains object a     factor
+    class(strains)
+    nlevels(strains)
+    strains # R orders alphabetically
 
 Once created, factors can only contain a pre-defined set of values,
 known as levels. By default, R always sorts `levels` in alphabetical
