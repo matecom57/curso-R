@@ -3,9 +3,10 @@ R and RStudio introduction
 
 ------------------------------------------------------------------------
 
-### Using RStudio on Jetstream
+Using RStudio on Jetstream
+--------------------------
 
-ÀQUI <https://angus.readthedocs.io/en/2019/R_Intro_Lesson.html#vectors>`_
+`AQUI <https://angus.readthedocs.io/en/2019/R_Intro_Lesson.html#vectors>`_
 
 We will be using R and RStudio on our cloud instances. We have
 pre-installed RStudio on the workshop image. Start up a Jetstream
@@ -35,7 +36,8 @@ Now go to the web address printed to your terminal in your Web browser, which sh
 
 and log in with the username and password we will provide. 
 
-### Installing on your own computer:
+Installing on your own computer:
+--------------------------------
 
 We will be using R and RStudio in the cloud. To use RStudio on your
 computer, you can download R and RStudio. If you do not have R and
