@@ -35,17 +35,13 @@ and log in with the username and password we will provide.
 Installing on your own computer:
 --------------------------------
 
-We will be using R and RStudio in the cloud. To use RStudio on your
-computer, you can download R and RStudio. If you do not have R and
-RStudio installed:
+Usaremos R y RStudio en la nube. Para usar RStudio en su computadora, puede descargar R y RStudio. Si no tiene R y RStudio instalados:
 
--   Download R from
+-   Descargar R desde
     `CRAN <https://cran.r-project.org/>`_
--   Go to `RStudio download <https://posit.co/download/rstudio-desktop/#download>`_ page and install the version that is
-    compatible with your operating system.
-    This `link <https://datacarpentry.github.io/R-ecology-lesson/>`_ provides
-    futher instructions on installing and setting up R and RStudio on
-    your computer.
+-   Ir a la página de `descarga de RStudio <https://posit.co/download/rstudio-desktop/#download>`_ e instala la versión que sea compatible con tu sistema operativo:
+    Este `enlace <https://datacarpentry.github.io/R-ecology-lesson/>`_ proporciona más instrucciones sobre la instalación y configuración de R y RStudio en su computadora.
+
 
 Introduction to R and RStudio
 -----------------------------
