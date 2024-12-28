@@ -93,16 +93,20 @@ console, but it is only recorded in scripts.
 There are two additional panes in RStudio:
 
 1.  **Environment/History/Connections pane**
+
     -   **Environment Pane**: This pane records the objects that are
         currently loaded in our RStudio environment. This includes any
         data object that we created and the basic information about
         them.
+
     -   **History Pane**: This has output similar to the `history`
         command that we used in the shell. It records all of the
         commands that we have executed in the R console.
+
 2.  **Files/Plots/Packages/Help/Viewer** pane provides a space for us to
     interact with plots and files we create and with built-in help files
     in R.
+
     -   **Packages Pane**: A place to organize the packages within
         RStudio. Allows easy installation or loading (`library()`) of
         the packages we have.
@@ -112,7 +116,8 @@ And now weâ€™re ready to start the fun part!
 Basic concepts
 --------------
 
-### Objects
+Objects
+-------
 
 An R object is something that you create and assign a value or function
 to. You do this using the *assignment operator* which is `<-` (NOTE:
@@ -120,9 +125,10 @@ shortcut Alt + -). For example you can assign a *numeric* value to an
 object by typing in your script (remember to comment what you are
 doing):
 
-``` r
-a <- 34  # assign the number 34 to the object a
-```
+.. code-block:: R
+
+    a <- 34  # assign the number 34 to the object a
+
 
 You can also assign a *character* value to an object:
 
