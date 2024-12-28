@@ -21,6 +21,7 @@ echo My username is $USER
 ```
 
 .. code-block:: bash
+
     echo My username is $USER
 
 The link for the RStudio server interface is built with our instance's IP address (by default in
