@@ -46,64 +46,44 @@ Usaremos R y RStudio en la nube. Para usar RStudio en su computadora, puede desc
 Introduction to R and RStudio
 -----------------------------
 
-R is a programming language and free software environment for
-statistical computing and graphics. Many bioinformatics programs are
-implemented in R. RStudio is a graphical integrated development
-environment (IDE) that displays and organizes more information about R.
-R is the underlying programming language. Once you start RStudio, you
-see this layout (it will be similar either on your instance or on your
-computer):
+R es un lenguaje de programación y un entorno de software libre para gráficos y computación estadística. Muchos programas de bioinformática se implementan en R. RStudio es un entorno de desarrollo integrado (IDE) gráfico que muestra y organiza más información sobre R. R es el lenguaje de programación subyacente. Una vez que inicie RStudio, verá este diseño (será similar tanto en su instancia como en su computadora):
+
 
 <center><img src="_static/RStudio_first.png" width="90%"></center>
 <br>
 
-Scripts are like a digital lab book. They record everything your run, as
-well as notes to yourself about how and why you ran it. To start a new
-script you can click on the icon that looks like a page with a â€˜+â€™
-underneath File and select â€“&gt;R script. This generates a `.R` file.
-`.R` files are plain text files that use the file extension `.R` so that
-humans can remember that the file contains R code.
+Los scripts son como un libro de laboratorio digital. Registran todo lo que ejecutas, así como notas para ti mismo sobre cómo y por qué lo ejecutaste. Para iniciar un nuevo script, puedes hacer clic en el ícono que parece una página con un "+" debajo de Archivo y seleccionar -> Script R. Esto genera un archivo .R. Los archivos .R son archivos de texto sin formato que usan la extensión de archivo .R para que los humanos puedan recordar que el archivo contiene código R.
+
 
 <center><img src="_static/RStudio_create_R_script.png" width="90%"></center>
 <br>
 
 
-Although scripts are a record of our code, they also include comments
-about our code. These comments are very important as they remind your
-future self (and whoever you pass your script) why you did what you did.
-Think of comments like the notes you take in your lab book when you do
-experiments.
+Aunque los scripts son un registro de nuestro código, también incluyen comentarios sobre él. Estos comentarios son muy importantes, ya que le recuerdan a usted (y a quienquiera que le pase su script) por qué hizo lo que hizo. Piense en los comentarios como las notas que toma en su cuaderno de laboratorio cuando hace experimentos.
 
 <center><img src="_static/RStudio_type_script.png" width="90%"></center>
 <br>
 
-When you execute a line of your script, it is sent to the console. While
-the script is a permanent record of everything you ran, the console is
-the engine that runs those things. You can run code from a script or the
-console, but it is only recorded in scripts.
+Cuando ejecutas una línea de tu script, esta se envía a la consola. Si bien el script es un registro permanente de todo lo que ejecutaste, la consola es el motor que ejecuta esas cosas. Puedes ejecutar código desde un script o desde la consola, pero solo se registra en scripts.
 
-There are two additional panes in RStudio:
+Hay dos paneles adicionales en RStudio:
 
-1.  **Environment/History/Connections pane**
+1.  **Panel Entorno/Historial/Conexiones**
 
-    -   **Environment Pane**: This pane records the objects that are
-        currently loaded in our RStudio environment. This includes any
-        data object that we created and the basic information about
-        them.
+    -   **Panel de entorno**: Este panel registra los objetos que están cargados actualmente en nuestro entorno RStudio. Esto incluye cualquier objeto de datos que hayamos creado y la información básica sobre ellos.
 
-    -   **History Pane**: This has output similar to the `history`
-        command that we used in the shell. It records all of the
-        commands that we have executed in the R console.
 
-2.  **Files/Plots/Packages/Help/Viewer** pane provides a space for us to
-    interact with plots and files we create and with built-in help files
-    in R.
+    -   **Panel de historial**: Esto tiene un resultado similar al comando history que usamos en el shell. Registra todos los comandos que hemos ejecutado en la consola R.
 
-    -   **Packages Pane**: A place to organize the packages within
-        RStudio. Allows easy installation or loading (`library()`) of
-        the packages we have.
 
-And now weâ€™re ready to start the fun part!
+2.  **Files/Plots/Packages/Help/Viewer** El panel nos proporciona un espacio para interactuar con los gráficos y archivos que creamos y con los archivos de ayuda integrados en R.
+
+
+    -   **Packages Pane**: Un lugar para organizar los paquetes dentro de RStudio. Permite una fácil instalación o carga (library()) de los paquetes que tenemos.
+
+
+¡Y ahora estamos listos para comenzar la parte divertida!
+
 
 Basic concepts
 --------------
