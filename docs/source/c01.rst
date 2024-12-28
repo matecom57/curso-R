@@ -23,7 +23,7 @@ El enlace para la interfaz del servidor RStudio se construye con la dirección I
 
     echo http://$(hostname -i):8787/
 
-``hostname`` is a command in the terminal that will get various information about our computers. Using it with the ``-i`` option returns our computer's IP address. So surrounding it within parentheses preceded by the ``$`` means the command line will execute that command first, put the output of that command in it's place (our IP address), and then run the `echo` command which then prints out the proper link to our RStudio server ðŸ˜Š
+``hostname`` es un comando en la terminal que obtendrá información variada sobre nuestras computadoras. Al usarlo con la opción ``-i``, se obtiene la **dirección IP** de nuestra computadora. Por lo tanto, si lo encierra entre paréntesis y lo precede el símbolo ``$``, significa que la línea de comandos ejecutará primero ese comando, colocará la salida de ese comando en su lugar (nuestra dirección IP) y luego ejecutará el comando echo, que luego imprimirá el enlace apropiado a nuestro servidor RStudio.
 
 Now go to the web address printed to your terminal in your Web browser, which should look something like this: 
 
