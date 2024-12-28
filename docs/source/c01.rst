@@ -4,6 +4,8 @@
 
 ### Using RStudio on Jetstream
 
+
+
 We will be using R and RStudio on our cloud instances. We have
 pre-installed RStudio on the workshop image. Start up a Jetstream
 m1.medium or larger using the ANGUS 2019 image [as per Jetstream startup
