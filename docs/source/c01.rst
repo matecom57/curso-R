@@ -85,102 +85,73 @@ Hay dos paneles adicionales en RStudio:
 ¡Y ahora estamos listos para comenzar la parte divertida!
 
 
-Basic concepts
+Conceptos básicos
 --------------
 
-Objects
+Objetos
 -------
 
-An R object is something that you create and assign a value or function
-to. You do this using the *assignment operator* which is `<-` (NOTE:
-shortcut Alt + -). For example you can assign a *numeric* value to an
-object by typing in your script (remember to comment what you are
-doing):
+Un objeto R es algo que creas y al que le asignas un valor o una función. Para ello, utilizas el operador de asignación, que es <- (NOTA: atajo Alt + -). Por ejemplo, puedes asignar un valor numérico a un objeto escribiendo en tu script (recuerda comentar lo que estás haciendo):
+
 
 .. code-block:: R
 
     a <- 34  # assign the number 34 to the object a
 
 
-You can also assign a *character* value to an object:
+También puedes asignar un valor *carácter* a un objeto:
+
 
 .. code-block:: R
 
     b <- 'mouse' # assign the word 'character' to the object b
 
-To run a line of code, put your cursor on the line that you want to run
-and press `Enter+Cmd` or `Enter+Ctrl`. Or select the line and click the
-button that says `Run` on the right top corner of your script.
+Para ejecutar una línea de código, coloque el cursor en la línea que desea ejecutar y presione Enter+Cmd o Enter+Ctrl. O seleccione la línea y haga clic en el botón que dice Run (Ejecutar) en la esquina superior derecha de su script.
+
 
 <center><img src="_static/first_lines.png" width="90%"></center>
 <br>
 
 
-Now check your Console and Environment tabs, you will see that the
-commands have run and that you have created new objects!
+Ahora revisa las pestañas Consola y Entorno, ¡verás que los comandos se han ejecutado y que has creado nuevos objetos!
 
-You can do all sorts of stuff with your objects: operations,
-combinations, use them in functions. Below we show how to perform
-multiplication using an object. Because `a` stores the value `34`, we
-can multiply it by 2:
+
+Puedes hacer todo tipo de cosas con tus objetos: operaciones, combinaciones, usarlos en funciones. A continuación te mostramos cómo realizar una multiplicación usando un objeto. Como a almacena el valor 34, podemos multiplicarlo por 2:
+
 
 .. code-block:: R
 
     a2 <- a*2 # multiply a by 2
 
-Functions and Arguments
+Funciones y argumentos
 -----------------------
 
-Functions are â€œcanned scriptsâ€ that automate more complicated sets of
-commands including operations assignments, etc. Many functions are
-predefined, or can be made available by importing R packages (more on
-that later). A function usually takes one or more inputs called
-arguments. Functions often (but not always) return a value. A typical
-example would be the function `sqrt()`. The input (the argument) must be
-a number, and the return value (in fact, the output) is the square root
-of that number. Executing a function (â€˜running itâ€™) is called calling
-the function. An example of a function call is:
+Las funciones son “scripts enlatados” que automatizan conjuntos de comandos más complicados, incluidas las asignaciones de operaciones, etc. Muchas funciones están predefinidas o se pueden poner a disposición importando paquetes R (más sobre esto más adelante). Una función generalmente toma una o más entradas llamadas argumentos. Las funciones a menudo (pero no siempre) devuelven un valor. Un ejemplo típico sería la función sqrt(). La entrada (el argumento) debe ser un número y el valor de retorno (de hecho, la salida) es la raíz cuadrada de ese número. Ejecutar una función ('ejecutarla') se llama llamar a la función. Un ejemplo de una llamada de función es:
+
 
 .. code-block:: R
 
     sqrt(a) ## calculate the square root of a
 
 
-Here, the value of `a` is given to the `sqrt()` function, the `sqrt()`
-function calculates the square root, and returns the value which is then
-assigned to the object `b`. This function is very simple, because it
-takes just one argument.
+Aquí, el valor de a se le asigna a la función sqrt(), que calcula la raíz cuadrada y devuelve el valor que luego se asigna al objeto b. Esta función es muy simple, ya que solo acepta un argumento.
 
-The return â€˜valueâ€™ of a function need not be numerical (like that of
-`sqrt()`), and it also does not need to be a single item: it can be a
-set of things, or even a dataset. Weâ€™ll see that when we read data files
-into R.
 
-Similar to the shell, **arguments** can be anything, not only numbers or
-filenames, but also other objects. Exactly what each argument means
-differs per function, and must be looked up in the documentation (see
-below). Some functions take arguments which may either be specified by
-the user, or, if left out, take on a default value: these are called
-options. **Options** are typically used to alter the way the function
-operates, such as whether it ignores â€˜bad valuesâ€™, or what symbol to use
-in a plot. However, if you want something specific, you can specify a
-value of your choice which will be used instead of the default.
+El valor de retorno de una función no tiene por qué ser numérico (como el de sqrt()) y tampoco tiene por qué ser un único elemento: puede ser un conjunto de elementos o incluso un conjunto de datos. Veremos esto cuando leamos archivos de datos en R.
 
-Letâ€™s try a function that can take multiple arguments: `round()`.
+
+De manera similar al shell, los argumentos pueden ser cualquier cosa, no solo números o nombres de archivos, sino también otros objetos. El significado exacto de cada argumento difiere según la función y debe buscarse en la documentación (ver más abajo). Algunas funciones toman argumentos que pueden ser especificados por el usuario o, si se omiten, toman un valor predeterminado: estos se denominan opciones. Las opciones se utilizan normalmente para modificar la forma en que opera la función, como por ejemplo si ignora los "valores incorrectos" o qué símbolo utilizar en un gráfico. Sin embargo, si desea algo específico, puede especificar un valor de su elección que se utilizará en lugar del valor predeterminado.
+
+
+Probemos una función que pueda tomar múltiples argumentos: ``round()``.
+
 
 .. code-block:: R
 
     round(3.141592) ## round number
 
 
-Arguments are the â€˜conditionsâ€™ of a function. For example, the function
-`round()` has an argument to determine the number of decimals, and its
-default in R is 0. Here, weâ€™ve called round() with just one argument,
-3.14159, and it has returned the value 3. Thatâ€™s because the default is
-to round to the nearest whole number. If we want more digits we can see
-how to do that by getting information about the round function. We can
-use args(round) to find what arguments it takes, or look at the help for
-this function using ?round.
+Los argumentos son las "condiciones" de una función. Por ejemplo, la función round() tiene un argumento para determinar el número de decimales, y su valor predeterminado en R es 0. Aquí, hemos llamado a round() con un solo argumento, 3.14159, y ha devuelto el valor 3. Esto se debe a que el valor predeterminado es redondear al número entero más cercano. Si queremos más dígitos, podemos ver cómo hacerlo obteniendo información sobre la función round. Podemos usar args(round) para encontrar qué argumentos toma, o mirar la ayuda para esta función usando ?round.
 
 .. code-block:: R
 
