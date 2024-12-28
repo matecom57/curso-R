@@ -16,10 +16,6 @@ instructions](jetstream/boot.html). Connect to your instance.
 We will need our instance username to connect to RStudio. To
 determine what your username is, run:
 
-``` bash
-echo My username is $USER
-```
-
 .. code-block:: bash
 
     echo My username is $USER
@@ -27,9 +23,9 @@ echo My username is $USER
 The link for the RStudio server interface is built with our instance's IP address (by default in
 port 8787), which we can get from the terminal by running the following command:
 
-``` bash
-echo http://$(hostname -i):8787/
-```
+.. code-block:: bash
+
+    echo http://$(hostname -i):8787/
 
 > `hostname` is a command in the terminal that will get various information about our computers. Using it with the `-i` option returns our computer's IP address. So surrounding it within parentheses preceded by the `$` means the command line will execute that command first, put the output of that command in it's place (our IP address), and then run the `echo` command which then prints out the proper link to our RStudio server ðŸ˜Š
 
