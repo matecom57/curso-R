@@ -4,7 +4,7 @@
 
 ### Using RStudio on Jetstream
 
-
+ÀQUI <https://angus.readthedocs.io/en/2019/R_Intro_Lesson.html#vectors>`_
 
 We will be using R and RStudio on our cloud instances. We have
 pre-installed RStudio on the workshop image. Start up a Jetstream
