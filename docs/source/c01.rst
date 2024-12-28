@@ -44,11 +44,10 @@ computer, you can download R and RStudio. If you do not have R and
 RStudio installed:
 
 -   Download R from
-    CRAN:<a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a>
--   Go to RStudio download page and install the version that is
-    compatible with your operating system:
-    <a href="https://www.rstudio.com/products/rstudio/download/#download" class="uri">https://www.rstudio.com/products/rstudio/download/#download</a>
-    This [link](https://datacarpentry.org/R-ecology-lesson/) provides
+    `CRAN <https://cran.r-project.org/>`_
+-   Go to `RStudio download <https://posit.co/download/rstudio-desktop/#download>`_ page and install the version that is
+    compatible with your operating system.
+    This `link <https://datacarpentry.github.io/R-ecology-lesson/>`_ provides
     futher instructions on installing and setting up R and RStudio on
     your computer.
 
