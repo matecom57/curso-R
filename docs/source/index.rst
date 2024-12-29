@@ -20,4 +20,5 @@ Contents
 
    usage
    c01
+   ggplot2-01
    api
