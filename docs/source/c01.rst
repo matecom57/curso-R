@@ -1,41 +1,13 @@
-R and RStudio introduction
+Introducción a R y RStudio
 ==========================
 
 ------------------------------------------------------------------------
 
-Using RStudio on Jetstream
---------------------------
 
-`AQUI <https://angus.readthedocs.io/en/2019/R_Intro_Lesson.html#vectors>`_
+Instalación en su propia computadora
+------------------------------------
 
-Usaremos R y RStudio en nuestras instancias en la nube. Hemos preinstalado RStudio en la imagen del taller. Inicie un Jetstream m1.medium o más grande usando la imagen ANGUS 2019 según las instrucciones de inicio de Jetstream. Conéctese a su instancia.
-
-Necesitaremos nuestro nombre de usuario de instancia para conectarnos a RStudio. Para determinar cuál es su nombre de usuario, ejecute:
-
-.. code-block:: bash
-
-    echo My username is $USER
-
-El enlace para la interfaz del servidor RStudio se construye con la dirección IP de nuestra instancia (por defecto en el puerto 8787), la cual podemos obtener desde la terminal ejecutando el siguiente comando:
-
-
-.. code-block:: bash
-
-    echo http://$(hostname -i):8787/
-
-``hostname`` es un comando en la terminal que obtendrá información variada sobre nuestras computadoras. Al usarlo con la opción ``-i``, se obtiene la **dirección IP** de nuestra computadora. Por lo tanto, si lo encierra entre paréntesis y lo precede el símbolo ``$``, significa que la línea de comandos ejecutará primero ese comando, colocará la salida de ese comando en su lugar (nuestra dirección IP) y luego ejecutará el comando echo, que luego imprimirá el enlace apropiado a nuestro servidor RStudio.
-
-Now go to the web address printed to your terminal in your Web browser, which should look something like this: 
-
-<center><img src="_static/RStudio.png" width="90%"></center>
-<br>
-
-and log in with the username and password we will provide. 
-
-Installing on your own computer:
---------------------------------
-
-Usaremos R y RStudio en la nube. Para usar RStudio en su computadora, puede descargar R y RStudio. Si no tiene R y RStudio instalados:
+Para usar RStudio en su computadora, puede descargar R y RStudio. Si no tiene R y RStudio instalados:
 
 -   Descargar R desde
     `CRAN <https://cran.r-project.org/>`_
@@ -43,11 +15,13 @@ Usaremos R y RStudio en la nube. Para usar RStudio en su computadora, puede desc
     Este `enlace <https://datacarpentry.github.io/R-ecology-lesson/>`_ proporciona más instrucciones sobre la instalación y configuración de R y RStudio en su computadora.
 
 
-Introduction to R and RStudio
+Introductión to R and RStudio
 -----------------------------
 
 R es un lenguaje de programación y un entorno de software libre para gráficos y computación estadística. Muchos programas de bioinformática se implementan en R. RStudio es un entorno de desarrollo integrado (IDE) gráfico que muestra y organiza más información sobre R. R es el lenguaje de programación subyacente. Una vez que inicie RStudio, verá este diseño (será similar tanto en su instancia como en su computadora):
 
+
+.. image:: rstudio_logo.png
 
 <center><img src="_static/RStudio_first.png" width="90%"></center>
 <br>
