@@ -11,14 +11,24 @@ ggplot2 is a system for declaratively creating graphics, based on The Grammar of
 
 Installation
 ------------
-# The easiest way to get ggplot2 is to install the whole tidyverse:
-install.packages("tidyverse")
 
-# Alternatively, install just ggplot2:
-install.packages("ggplot2")
+The easiest way to get ggplot2 is to install the whole tidyverse:
 
-# Or the development version from GitHub:
-# install.packages("pak")
-pak::pak("tidyverse/ggplot2")
+.. code-block:: Python
+
+	install.packages("tidyverse")
+
+Alternatively, install just ggplot2:
+
+.. code-block:: Python
+
+	install.packages("ggplot2")
+
+Or the development version from GitHub:
+
+.. code-block:: Python
+
+	install.packages("pak")
+	pak::pak("tidyverse/ggplot2")
 
 
