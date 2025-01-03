@@ -3,22 +3,15 @@ C01-Manas
 
 1 What Is Data Science?
 
-We live in the age of data. In the present day, data is all around us and collected at unprecedented levels. The data can be in the form of network/graph data: a wealth of information in a billion user social network, web pages indexed by a search engine, shopping transactions of an e-commerce business, or a large wireless sensor network. The amount of data that we generate is enormous: in 2012, every day, we created 2.5 quintillion bytes or 2.5 million terabytes of data. The growth rate is even more staggering: 90% of world’s data was generated over the last two years [1].
-
 Vivimos en la era de los datos. En la actualidad, los datos están a nuestro alrededor y se recopilan a niveles sin precedentes. Los datos pueden presentarse en forma de datos de red o de grafos: una gran cantidad de información en una red social con mil millones de usuarios, páginas web indexadas por un motor de búsqueda, transacciones de compras de una empresa de comercio electrónico o una gran red de sensores inalámbricos. La cantidad de datos que generamos es enorme: en 2012, todos los días creamos 2,5 quintillones de bytes o 2,5 millones de terabytes de datos. La tasa de crecimiento es aún más asombrosa: el 90% de los datos del mundo se generaron en los últimos dos años [1].
 
 
-Data is not very useful by itself unless it is converted into knowledge. This knowledge is in the form of insights, which can provide a lot of information about the underlying process. Corporations are increasingly becoming more data driven: using insights from the data to drive their business decisions. A new class of applications is the data product [2], which takes a step further by converting data insight into a usable consumer product.
-
 Los datos no son muy útiles por sí solos a menos que se conviertan en conocimiento. Este conocimiento se presenta en forma de insights, que pueden brindar mucha información sobre el proceso subyacente. Las corporaciones se orientan cada vez más a los datos: utilizan insights de los datos para impulsar sus decisiones comerciales. Una nueva clase de aplicaciones es el producto de datos [2], que va un paso más allá al convertir el insight de los datos en un producto de consumo utilizable.
 
-Some of the prominent examples of data products include:
 
 Algunos de los ejemplos destacados de productos de datos incluyen:
 
 
-
-Google flu trends: By analyzing the search engine query logs, Google is able to track the prevalence of influenza faster than the Centers for Disease Control and Prevention (CDC).
 
 Tendencias de gripe en Google: al analizar los registros de consultas del motor de búsqueda, Google puede rastrear la prevalencia de la gripe más rápido que los Centros para el Control y la Prevención de Enfermedades (CDC).
 
