@@ -29,7 +29,7 @@ Nuestro objetivo es proporcionar un tutorial para realizar ciencia de datos con 
 Contents
 --------
 
-.. toctree:
+.. toctree::
 
    1 Introduction                          . 1
 
