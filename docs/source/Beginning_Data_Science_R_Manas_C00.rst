@@ -1,4 +1,4 @@
-Preface_Manas
+Preface_Manas-1
 ============
 
 Manas A. Pathak
@@ -29,8 +29,7 @@ Nuestro objetivo es proporcionar un tutorial para realizar ciencia de datos con 
 Contents
 --------
 
-.. toctree::
-   :numbered:
+.. contents::
 
    1 Introduction                          . 1
 
