@@ -29,13 +29,13 @@ Nuestro objetivo es proporcionar un tutorial para realizar ciencia de datos con 
 Contents
 --------
 
-.. contents::
+.. toctree::
 
-   1 Introduction                          . 1
+   1 Introduction                      
 
-   1.1 What Is Data Science?                    1
+   1.1 What Is Data Science?            
 
-   1.2 Why R?                          . 2
+   1.2 Why R?                 
 
    1.3 Goal of This Book                      3
 
