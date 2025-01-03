@@ -20,6 +20,6 @@ Contents
 
    usage
    c01
-   Beginning_Data_Science_R_Manas_C00.rst
+   Beginning_Data_Science_R_Manas_C00
    ggplot2-01
    api
