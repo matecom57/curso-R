@@ -2,6 +2,7 @@ C01-Manas
 =========
 
 1 What Is Data Science?
+-----------------------
 
 Vivimos en la era de los datos. En la actualidad, los datos están a nuestro alrededor y se recopilan a niveles sin precedentes. Los datos pueden presentarse en forma de datos de red o de grafos: una gran cantidad de información en una red social con mil millones de usuarios, páginas web indexadas por un motor de búsqueda, transacciones de compras de una empresa de comercio electrónico o una gran red de sensores inalámbricos. La cantidad de datos que generamos es enorme: en 2012, todos los días creamos 2,5 quintillones de bytes o 2,5 millones de terabytes de datos. La tasa de crecimiento es aún más asombrosa: el 90% de los datos del mundo se generaron en los últimos dos años [1].
 
@@ -16,12 +17,10 @@ Algunos de los ejemplos destacados de productos de datos incluyen:
 Tendencias de gripe en Google: al analizar los registros de consultas del motor de búsqueda, Google puede rastrear la prevalencia de la gripe más rápido que los Centros para el Control y la Prevención de Enfermedades (CDC).
 
 
-Netflix recommendation engine: Looking at the movie ratings and watching patterns of pairs of users, the Netflix recommendation engine is able to accurately predict the ratings for the movies that a user has not seen before.
 
 Motor de recomendaciones de Netflix: al observar las calificaciones de películas y los patrones de visualización de pares de usuarios, el motor de recomendaciones de Netflix puede predecir con precisión las calificaciones de las películas que un usuario no ha visto antes.
 
 
-The methodology of extracting insights from data is called as data science. Historically, data science has been known by different names: in the early days, it was known simply as statistics, after which it became known as data analytics. There is an important difference between data science as compared to statistics and data analytics. Data science is a multi-disciplinary subject: it is a combination of statistical analysis, programming, and domain expertise [3]. Each of these aspects is important:
 
 La metodología de extracción de información a partir de datos se denomina ciencia de datos. Históricamente, la ciencia de datos se ha conocido con diferentes nombres: en sus inicios, se la conocía simplemente como estadística, y luego se la conoció como análisis de datos. Existe una diferencia importante entre la ciencia de datos y la estadística y el análisis de datos. La ciencia de datos es una disciplina multidisciplinaria: es una combinación de análisis estadístico, programación y experiencia en el dominio [3]. Cada uno de estos aspectos es importante:
 
@@ -39,76 +38,66 @@ Domain expertise is essential in identifying the problems that need to be solved
 El conocimiento del dominio es esencial para identificar los problemas que necesitan resolverse, formular hipótesis sobre las soluciones y, lo más importante, comprender cómo deben aplicarse los conocimientos del análisis.
 
 
-Over the last few years, data science has emerged as a discipline in its own right.
 
 En los últimos años, la ciencia de datos ha surgido como una disciplina por derecho propio.
 
 
-However, there is no standardized set of tools that are used in the analysis. Data scientists use a variety of programming languages and tools in their work, sometimes even using a combination of heterogeneous tools to perform a single analysis. This increases the learning curve for the new data scientists. The R programming environment presents a great homogeneous set of tools for most data science tasks.
 
 Sin embargo, no existe un conjunto estandarizado de herramientas que se utilicen en el análisis. Los científicos de datos utilizan una variedad de lenguajes y herramientas de programación en su trabajo, a veces incluso utilizan una combinación de herramientas heterogéneas para realizar un único análisis. Esto aumenta la curva de aprendizaje para los nuevos científicos de datos. El entorno de programación R presenta un gran conjunto homogéneo de herramientas para la mayoría de las tareas de ciencia de datos.
 
 
 1.2 Why R?
+----------
 
-The R programming environment is increasingly becoming a one-stop solution to data science. R was first created in 1993 and has evolved into a stable product. It is becoming the de facto standard for data analysis in academia and industry.
 
 El entorno de programación R se está convirtiendo cada vez más en una solución integral para la ciencia de datos. R se creó por primera vez en 1993 y ha evolucionado hasta convertirse en un producto estable. Se está convirtiendo en el estándar de facto para el análisis de datos en el ámbito académico y la industria.
 
 
-The first advantage of using R is that it is open source software. It has many advantages of other commercial statistical platforms such as MATLAB, SAS, and SPSS. Additionally, R works on most platforms: GNU/Linux, OS X, Windows.
 
 La primera ventaja de utilizar R es que se trata de un software de código abierto. Tiene muchas ventajas respecto de otras plataformas estadísticas comerciales como MATLAB, SAS y SPSS. Además, R funciona en la mayoría de las plataformas: GNU/Linux, OS X, Windows.
 
 
-R has its roots in the statistics community, being created by statisticians for statisticians. This is reflected in the design of the programming language: many of its core language elements are geared toward statistical analysis. The second advantage using R is that the amount of code that we need to write in R is very small compared to other programming languages. There are many high-level data types and functions available in R that hide the low-level implementation details from the programmer. Although there exist R systems used in production with significant complexity, for most data analysis tasks, we need to write only a few lines of code.
 
 R tiene sus raíces en la comunidad estadística, ya que fue creado por estadísticos para estadísticos. Esto se refleja en el diseño del lenguaje de programación: muchos de sus elementos básicos están orientados al análisis estadístico. La segunda ventaja de usar R es que la cantidad de código que necesitamos escribir en R es muy pequeña en comparación con otros lenguajes de programación. Hay muchos tipos de datos y funciones de alto nivel disponibles en R que ocultan los detalles de implementación de bajo nivel al programador. Aunque existen sistemas R que se utilizan en producción con una complejidad significativa, para la mayoría de las tareas de análisis de datos, necesitamos escribir solo unas pocas líneas de código.
 
 
-R can be used both as an interactive or a noninteractive environment. We can use R as an interactive console, where we can try out individual statements and observe the output directly. This is useful in exploring the data, where the output of the first statement can inform which step to take next. However, R can also be used to run a script containing a set of statements in a noninteractive environment.
 
 R se puede utilizar como un entorno interactivo o no interactivo. Podemos utilizar R como una consola interactiva, donde podemos probar sentencias individuales y observar el resultado directamente. Esto resulta útil para explorar los datos, donde el resultado de la primera sentencia puede indicar qué paso dar a continuación. Sin embargo, R también se puede utilizar para ejecutar un script que contenga un conjunto de sentencias en un entorno no interactivo.
 
 
-The final benefit of using R is the set of R packages. The single most important reason for the growing popularity of R is its vast package library called the Comprehensive R Archive Network, or more commonly known as CRAN.1 Most statistical analysis methods usually have an open source implementation in the form of an R package. R is supported by a vibrant community and a growing ecosystem of package developers.
 
 El beneficio final de usar R es el conjunto de paquetes de R. La razón más importante de la creciente popularidad de R es su vasta biblioteca de paquetes llamada Red Integral de Archivos de R, o más comúnmente conocida como CRAN.1 La mayoría de los métodos de análisis estadístico suelen tener una implementación de código abierto en forma de un paquete de R. R cuenta con el respaldo de una comunidad vibrante y un ecosistema creciente de desarrolladores de paquetes.
 
 
 1.3 Goal of This Book
+---------------------
 
-Due to its statistical focus, however, R is one of the more difficult tools to master, especially for programmers without a background in statistics. As compared to other programming languages, there are relatively few resources to learn R. All R packages are supported with documentation; but it is usually structured as reference material. Most documentation assumes a good understanding of the fundamentals of statistics.
 
 Sin embargo, debido a su enfoque estadístico, R es una de las herramientas más difíciles de dominar, especialmente para programadores sin conocimientos previos de estadística. En comparación con otros lenguajes de programación, hay relativamente pocos recursos para aprender R. Todos los paquetes de R cuentan con documentación, pero normalmente está estructurada como material de referencia. La mayor parte de la documentación presupone un buen conocimiento de los fundamentos de la estadística.
 
 
-The goal of this book is to introduce the readers to some of the useful data science techniques and their implementation with the R programming language. In terms of the content, the book attempts to strike a balance between the how: specific processes and methodologies, while also talking about the why: going over the intuition behind how a particular technique works, so that the reader can apply it to the problem at hand.
 
 El objetivo de este libro es presentar a los lectores algunas de las técnicas útiles de la ciencia de datos y su implementación con el lenguaje de programación R. En términos del contenido, el libro intenta lograr un equilibrio entre el cómo: procesos y metodologías específicos, y también habla del por qué: repasa la intuición detrás de cómo funciona una técnica particular, para que el lector pueda aplicarla al problema en cuestión.
 
 
-The book does not assume familiarity with statistics. We will review the prerequisite concepts from statistics as they are needed. The book assumes that the reader is familiar with programming: proficient in at least one programming language. We provide an overview of the R programming language and the development environment in the Appendix.
 
 El libro no presupone que el lector esté familiarizado con las estadísticas. Repasaremos los conceptos de estadística necesarios a medida que sean necesarios. El libro presupone que el lector está familiarizado con la programación: es competente en al menos un lenguaje de programación. En el Apéndice proporcionamos una descripción general del lenguaje de programación R y el entorno de desarrollo.
 
 
-This book is not intended to be a replacement for a statistics textbook. We will not go into deep theoretical details of the methods including the mathematical formulae. The focus of the book is practical; with the goal of covering how to implement these techniques in R. To gain a deeper understanding of the underlying methodologies, we refer the reader to textbooks on statistics [4].
 
 Este libro no pretende sustituir a un libro de texto de estadística. No entraremos en detalles teóricos profundos de los métodos, incluidas las fórmulas matemáticas. El enfoque del libro es práctico; con el objetivo de cubrir cómo implementar estas técnicas en R. Para obtener una comprensión más profunda de las metodologías subyacentes, remitimos al lector a libros de texto sobre estadística [4].
 
 
-The scope of this book is not encyclopedic: there are hundreds of data science methodologies that are used in practice. In this book we only cover some of the important ones that will help the reader get started with data science. All the methodologies that we cover in this book are also fairly detailed subjects by themselves: each worthy of a separate volume. We aim to cover the fundamentals and some of the most useful techniques with the goal of providing the user with a good understanding of the methodology and the steps to implement it in R. The best way to learn data analysis is by trying it out on a dataset and interpreting the results. In each chapter of this book, we apply a set of methodologies to a real-world dataset.
 
 El alcance de este libro no es enciclopédico: existen cientos de metodologías de ciencia de datos que se utilizan en la práctica. En este libro solo cubrimos algunas de las más importantes que ayudarán al lector a iniciarse en la ciencia de datos. Todas las metodologías que cubrimos en este libro también son temas bastante detallados por sí mismos: cada uno merece un volumen separado. Nuestro objetivo es cubrir los fundamentos y algunas de las técnicas más útiles con el objetivo de proporcionar al usuario una buena comprensión de la metodología y los pasos para implementarla en R. La mejor manera de aprender el análisis de datos es probándolo en un conjunto de datos e interpretando los resultados. En cada capítulo de este libro, aplicamos un conjunto de metodologías a un conjunto de datos del mundo real.
 
 
-Data science is becoming ubiquitous: it is finding application in every domain area. In this book, we do not focus on any single domain such as econometrics, genetics, or web data. Our goal is to to provide tools to analyze any kind of data. When dealing with issues specific to a particular domain, we refer the reader to other books on data analysis available in the UseR! series.
 
 La ciencia de datos se está volviendo omnipresente: está encontrando aplicaciones en todas las áreas del dominio. En este libro, no nos centramos en un solo dominio, como la econometría, la genética o los datos web. Nuestro objetivo es proporcionar herramientas para analizar cualquier tipo de datos. Cuando se trata de cuestiones específicas de un dominio en particular, remitimos al lector a otros libros sobre análisis de datos disponibles en la serie UseR!.
 
 
 1.4 Book Overview
+-----------------
 
 In Chapter 2, we provide an overview of the R programming language. The readers who are already familiar with R can skim through it.
 
