@@ -1,29 +1,26 @@
-Preface
-=======
+Preface_Manas
+============
 
 Manas A. Pathak
 Beginning Data Science
 with R
 
 
-We live in an age where data is being collected at unprecedented levels. One can benefit from data only after converting it into useful and actionable knowledge. In the past few years, the methodology of extracting insights from data or “data science” has emerged as a discipline in its own right. Historically, a diverse set of tools have been used for data analysis. The R programming language is increasingly becoming a one-stop solution to data science.
 
 Vivimos en una época en la que se recopilan datos a niveles sin precedentes. Solo se pueden obtener beneficios de los datos después de convertirlos en conocimiento útil y procesable. En los últimos años, la metodología de extracción de información a partir de los datos o “ciencia de datos” ha surgido como una disciplina por derecho propio. Históricamente, se ha utilizado un conjunto diverso de herramientas para el análisis de datos. El lenguaje de programación R se está convirtiendo cada vez más en una solución integral para la ciencia de datos.
 
 
-R is an open-source software and can be used on most computing platforms: Windows, Unix/Linux, Mac OS X. The primary reason for the growing popularity of R is due to a vast package library containing implementations for most statistical analysis techniques. On the other hand, R is not an easy programming language to learn due to its esoteric syntax. The documentation for most packages is in the form of reference material, which makes it difficult for programmers without a background in statistics to get started on their own.
 
 R es un software de código abierto y se puede utilizar en la mayoría de las plataformas informáticas: Windows, Unix/Linux, Mac OS X. La principal razón de la creciente popularidad de R se debe a una amplia biblioteca de paquetes que contiene implementaciones para la mayoría de las técnicas de análisis estadístico. Por otro lado, R no es un lenguaje de programación fácil de aprender debido a su sintaxis esotérica. La documentación de la mayoría de los paquetes se presenta en forma de material de referencia, lo que dificulta que los programadores sin conocimientos de estadística puedan empezar a trabajar por su cuenta.
 
 
 Goal of this Book
+-----------------
 
-In this book, we introduce the readers to some of the useful data science techniques and their implementation with the R programming language. We attempt to strike a balance between the how and the why. We will cover both the how: various data science processes and methodologies, and the why: understanding the motivation and internals of each technique. The goal of this book is to enable the reader to apply similar methodologies to analyze their own datasets.
 
 En este libro, presentamos a los lectores algunas de las técnicas útiles de ciencia de datos y su implementación con el lenguaje de programación R. Intentamos lograr un equilibrio entre el cómo y el por qué. Cubriremos tanto el cómo (varios procesos y metodologías de ciencia de datos) como el por qué (comprender la motivación y los aspectos internos de cada técnica). El objetivo de este libro es permitir que el lector aplique metodologías similares para analizar sus propios conjuntos de datos.
 
 
-We aim to provide a tutorial for performing data science with R as opposed to a reference manual. The number of data analysis methods and the corresponding R packages is vast. This book is intended to be a good starting point to begin data analysis. In each chapter, we present a data science methodology with a case study, including a dataset. All the datasets and source code listings are available for download at: http://extras.springer.com.
 
 Nuestro objetivo es proporcionar un tutorial para realizar ciencia de datos con R, en lugar de un manual de referencia. La cantidad de métodos de análisis de datos y los paquetes R correspondientes es enorme. Este libro pretende ser un buen punto de partida para comenzar con el análisis de datos. En cada capítulo, presentamos una metodología de ciencia de datos con un estudio de caso, incluido un conjunto de datos. Todos los conjuntos de datos y los listados de códigos fuente están disponibles para descargar en: http://extras.springer.com.
 
@@ -35,10 +32,15 @@ Contents
 .. toctree:
 
    1 Introduction                          . 1
+
    1.1 What Is Data Science?                    1
+
    1.2 Why R?                          . 2
+
    1.3 Goal of This Book                      3
+
    1.4 Book Overview                       3
+
    References                           . 4
 
 2 Overview of the R Programming Language            . 5
