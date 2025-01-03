@@ -21,5 +21,6 @@ Contents
    usage
    c01
    Beginning_Data_Science_R_Manas_C00
+   Beginning_Data_Science_R_Manas_C01
    ggplot2-01
    api
