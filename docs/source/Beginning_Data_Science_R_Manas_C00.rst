@@ -29,21 +29,20 @@ Nuestro objetivo es proporcionar un tutorial para realizar ciencia de datos con 
 Contents
 --------
 
-.. toctree::
+1.   1 Introduction                      
 
-   1 Introduction                      
+#.   1.1 What Is Data Science?            
 
-   1.1 What Is Data Science?            
+#.   1.2 Why R?                 
 
-   1.2 Why R?                 
+#.   1.3 Goal of This Book                      3
 
-   1.3 Goal of This Book                      3
-
-   1.4 Book Overview                       3
+#.   1.4 Book Overview                       3
 
    References                           . 4
 
-2 Overview of the R Programming Language            . 5
+#. 2 Overview of the R Programming Language            . 5
+
 2.1 Installing R                         5
 2.1.1 Development Tools                  . 6
 2.2 R Programming Language                  . 7
