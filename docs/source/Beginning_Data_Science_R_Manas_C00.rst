@@ -30,6 +30,7 @@ Contents
 --------
 
 .. toctree::
+   :numbered:
 
    1 Introduction                          . 1
 
